@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="space">
+                    <div class="space-1"></div>
+                </div>
+                <div class="top-bar-search">
+                    <div class="top-bar-input">
+                        <input name="search" type="text" placeholder="Search Cars and Brands" id="searchbox" required="required">
+                        <span class="search-button">
+                            <button name="submit" value="submit" type="submit" class="search-1">
+                                <i class="click-1">
+                                </i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="top-content">
+                    <div class="top-content-1">
+                        <ul>
+                            <li>
+                                <a type="button-1">
+                                    "editor@v3cars.com"
+                                </a>
+                            </li>
+                        </ul>
+                        <a type="button-2">
+                            Login / Register
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-bar-1">
+        <img class="logo" src="assets\images\cars.png">
+            <div class="nav-bar-1-menu">
+                <ul class="nav-bar-menu">
+                    <li>
+                        <a href="">New Cars</a>
+                    </li>
+                    <li>
+                        <a href="">News</a>
+                    </li>
+                    <li>
+                        <a href="">Compare cars</a>
+                    </li>
+                    <li>
+                        <a href="">Varient Explained</a>
+                    </li>
+                    <li>
+                        <a href="">Video</a>
+                    </li>
+                    <li>
+                        <a href="">Reviews</a>
+                    </li>
+                    <li>
+                        <a href="">More</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </header>
+    <div class="page-content">
+        <div class="top-heading">
+            <ul class="top-heading-text">
+                <li>
+                    <a href="">V3Cars /</a>
+                </li>
+                <li>
+                    <a href="">Fuel Cost Calculator India </a>
+                </li>
+            </ul>
+        </div>
+        <div class="full-content">
+            <div class="container-1">
+                <div id="blank-space">
+
+                </div>
+                <div class="card">
+                    <div class="card-heading">
+                      <h1 class="card-title">Fuel Cost Calculator India</h1> 
+                    </div>
+                    <div class="card-body">
+                        <p class="p-1">
+                            <span class="paragraph-1">
+                                In this fuel cost calculator, you can check and compare the monthly running cost. You can compare the daily, monthly and yearly fuel cost of one petrol, diesel or CNG car with other car of a different fuel type. You only need to enter the petrol, diesel or CNG cost per unit or per litre and the approximate mileage you expect from the vehicle.
+                            </span>
+                        </p>
+                        <p class="p-2">
+                            <Span class="paragraph-2">
+                            The latest fuel price will come automatically based on the selected city. You can also change the city to get the latest petrol, diesel, and CNG fuel prices for your city. While calculating the daily, monthly or yearly fuel cost of your car, you can also manually enter higher or lower fuel prices. This will help you estimate the running cost of your petrol, diesel or CNG vehicle if the fuel prices go up because of inflation or higher crude oil prices.
+                        </Span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="choises01">
+            <lable class="distance" ><span
+                    class="option1">D</span>istance</lable>
+            <input id="kilometer" type="radio" name="distance" onclick="displaykm()">
+            <lable for="kilometer" ><span
+                    class="option1">K</span>ilometer</lable>
+            <input type="radio" name="distance" id="miles" onclick="displaymil()">
+            <lable for="miles"><span class="option2">M</span>iles
+            </lable><br>
+            <div id="dailydistancekm">
+                <lable ><span class="option3">D</span>aily
+                    <span class="option6">D</span>rive <span class="option4">D</span>istance in <span
+                        class="option5">K</span>ilometer
+                </lable>
+                <input type="number" id="dailydrivediskm" value=1>
+            </div>
+            <div id="dailydistancemil">
+                <lable ><span class="option3">D</span>aily
+                    <span class="option6">D</span>rive <span class="option4">D</span>istance in <span
+                        class="option5">M</span>iles
+                </lable>
+                <input type="number" id="dailydrivedismil" value=0.621>
+            </div>
+            <lable class="Qantity"><span class="option1">Q</span>uantity
+            </lable>
+            <input id="liter" type="radio" name="Qantity">
+            <lable for="liter"><span class="option1">L</span>iter
+            </lable>
+            <input type="radio" name="Qantity" id="gallon">
+            <lable for="gallon" ><span class="option2">G</span>allon
+            </lable><br>
+        </div>
+        <div class="table-box">
+            <table>
+                <tr>
+                    <th class="top-left-value"></th>
+                    <th>Petrol</th>
+                    <th>Disel</th>
+                    <th class="top-right-value">CNG</th>
+                </tr>
+                <tr>
+                    <td id="table-content">Kilometre/Liter <br>(Mileage of vehicle)</td>
+                    <td><input type="number" id="MileagePetrol" value="15"></td>
+                    <td><input type="number" id="MileageDiesel" value="20"></td>
+                    <td><input type="number" id="MileageCng" value="22"></td>
+                </tr>
+                <tr>
+                    <td>Enter Fuel Cost <br>Per Liter</td>
+                    <td><input type="number" id="CostPetrol" value="106.29"></td>
+                    <td><input type="number" id="CostDiesel" value="94.25"></td>
+                    <td><input type="number" id="CostCng" value="79.00"></td>
+                </tr>
+                <tr>
+                    <td>Daily Fuel Cost</td>
+                    <td><label id="DailyPetrol"></label></td>
+                    <td><label id="DailyDiesel"></label></td>
+                    <td><label id="DailyCng"></label></td>
+                </tr>
+                <tr>
+                    <td>Monthly Fuel Cost</td>
+                    <td><label id="MonthlyPetrol"></label></td>
+                    <td><label id="MonthlyDiesel"></label></td>
+                    <td><label id="MonthlyCng"></label></td>
+                </tr>
+                <tr>
+                    <td class="bottom-left-value">Yearly Fuel Cost</td>
+                    <td><label id="yearlyPetrol"></label></td>
+                    <td><label id="yearlyDiesel"></label></td>
+                    <td class="bottom-right-value"><label id="yearlyCng"></label></td>
+                </tr>
+            </table><br>
+            <input type="button" id="Calculate" value="Calculate Price">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
